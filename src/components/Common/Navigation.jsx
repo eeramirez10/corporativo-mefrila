@@ -32,12 +32,12 @@ class Navigation extends React.Component {
             <>
                 <div className={(this.props.bgcolor !== '') ? `header-nav navbar-collapse collapse ${this.props.bgcolor}` : 'header-nav navbar-collapse collapse'}>
                     <ul className="nav navbar-nav">
-                        <li className="active">
-                            <NavLink to={""}>Home</NavLink>
+                        <li >
+                            <Link  to={""}>Home</Link>
 
                         </li>
-                        <li>
-                            <Link activeClass='active' to={"nosotros"} spy={true} smooth={true} duration={1000} offset={-90} isDynamic={true} >Nosotros</Link>
+                        <li className={ ({isActive}) => isActive ? 'active' : ''} >
+                            <Link  to={"nosotros"} spy={true} smooth={true} duration={1000} offset={-90} isDynamic={true} >Nosotros</Link>
                             
                         </li>
                         <li>
