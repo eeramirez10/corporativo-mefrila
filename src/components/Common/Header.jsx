@@ -10,7 +10,7 @@ class Header extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = {logo: require('./../../images/mefrila.gif')};
+        this.state = {logo: require('./../../images/mefrila.png')};
     }
 
     state = { isSearchActive: false, isQuoteActive: false };

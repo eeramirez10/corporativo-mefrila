@@ -8,7 +8,7 @@ const images = [
     require('./../../images/gallery/portrait/accesor2.gif'),
     require('./../../images/gallery/portrait/person1.gif'),
     require('./../../images/gallery/portrait/rollonvp3.gif'),
-    require('./../../images/gallery/portrait/pic7.jpg'),
+    // require('./../../images/gallery/portrait/pic7.jpg'),
 ]
 
 var bnr1 = require('./../../images/background/line.png');
@@ -52,7 +52,7 @@ class About3 extends React.Component {
                         <div className="section-content ">
                             <div className="row">
                                 <div className="col-md-5 col-sm-6">
-                                    <div className="m-about ">
+                                    <div >
                                         <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
                                             {images.map((item, index) => (
                                                 <div className="item" key={index}>
